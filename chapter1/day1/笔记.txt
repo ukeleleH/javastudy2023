@@ -1,0 +1,23 @@
+Java是先编译后运行的(通过javac.exe编译，通过java.exe运行)
+.java(源文件) -> .class(字节码文件)
+
+1. HelloChina.java 这个源文件里写了中文，为了能在cmd命令行下成功编译和运行，采用了ANSI编码格式，
+因为cmd命令行默认显示是采用GBK的(ANSI编码格式对应中文的GBK编码格式)，如果通过Ieal或其他软件打开有乱码，
+因为这些软件默认显示采用的是UTF-8的编码格式
+
+2. main 方法的固定写法就是（不可修改）： public static void main，否则就不是 main 方法了
+
+3. String[] args 可以写成 String arg[]
+
+4. String[] args 其中的 args 也可以写成别的eg：String[] abc【这个没有强制要求，但还是要遵循规范】
+
+5. 一个源文件里可以写多个 class
+
+6. 一个源文件可以编译成多个字节码文件，取决于源文件中 class 的数量（每一个字节码文件对应一个Java类）
+
+7. 编译后的字节码文件名是根据源文件中的类名来生成的，而不是根据源文件的文件名来生成的
+
+8. 一个源文件里只可以有一个 class 用 public 修饰，且这个被修饰的 class 必须和文件名同名
+
+
+
